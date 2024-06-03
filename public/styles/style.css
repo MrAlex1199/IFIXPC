@@ -18,6 +18,12 @@
   }
 }
 
+.logo-square {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
 .icon-square {
   width: 3rem;
   height: 3rem;
