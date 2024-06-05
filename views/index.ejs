@@ -1,10 +1,7 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/menu.ejs") %>
 
-  <%- include("partials/header.ejs") %>
-  <%- include("partials/menu.ejs") %>
-
-  
-
-  <body>
+<body>
   <!-- Title -->
   <section id="title" class="gradient-background">
     <div class="container col-xxl-8 px-4 pt-5">
@@ -14,15 +11,42 @@
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-light lh-1 mb-3">Let us Support Everything About You<br/> Notebook&PC</h1>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Sign up for free</button>
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-light btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign up for free
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header mb-3">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                  <form class="">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+                    <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                    <hr class="my-1">
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Features -->
-  
+
+  <!-- Features -->  
   <section id="features">
     <div class="container mt-5">
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
