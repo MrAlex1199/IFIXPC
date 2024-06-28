@@ -18,11 +18,11 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/product", (req, res) => {
-    res.render("product.ejs");
+    res.render("Product.ejs");
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact.ejs");
+    res.render("Contact.ejs");
 });
 
 app.get("/signup", (req, res) => {
